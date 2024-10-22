@@ -1,0 +1,387 @@
+.cm-s-obsidian
+  span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code):not(
+    .obsidian-search-match-highlight
+  ) {
+  border-radius: 1px;
+  font-size: 14px;
+  border: 2px solid gray;
+}
+
+/*Ссылка у которой нет файла*/
+.is-unresolved .cm-underline {
+  border-radius: 10px;
+  font-weight: 500;
+  padding: 2px 5px 2px 5px;
+  border-inline: 1.5px solid red;
+}
+
+.markdown-source-view.mod-cm6 .is-unresolved .cm-underline:hover {
+  background-color: var(--color-hover-link);
+  color: white;
+  border: none;
+  /* font-weight: bold; */
+}
+
+/*ссылки  */
+.cm-s-obsidian .cm-hmd-internal-link:not(:has(.is-unresolved)) {
+  background-color: rgb(171, 171, 171);
+  border-radius: 20px;
+  padding: 2px 6px 2px 6px;
+  margin: 2px;
+}
+
+.cm-s-obsidian .cm-hmd-internal-link:not(:has(.is-unresolved)):hover {
+  background-color: var(--color-hover-link);
+  border-radius: 20px;
+  padding: 2px 6px 2px 6px;
+  margin: 2px;
+}
+
+/*Жирный текст только у внутрении ссылок*/
+.cm-s-obsidian .cm-hmd-internal-link:not(:has(.is-unresolved)) .cm-underline {
+  /* font-weight: bold; */
+}
+/*цвет ссылок при наведении*/
+.cm-s-obsidian
+  .cm-hmd-internal-link:not(:has(.is-unresolved))
+  .cm-underline:hover {
+  color: white;
+}
+
+/*URL ссылка*/
+.cm-link,
+.cm-url {
+  background-color: white;
+  border-radius: 20px;
+  padding: 2px 6px 2px 6px;
+  margin: 2px;
+}
+.cm-hmd-barelink .cm-link {
+  background-color: rgb(156, 13, 13);
+}
+.cm-link:hover,
+.cm-url:hover {
+  background-color: black;
+  --link-external-color-hover: white;
+  font-weight: bold;
+}
+
+/*убираю border у скобок для ссылкок [ */
+.cm-s-obsidian span.cm-footref.cm-inline-footnote.cm-formatting-inline-footnote,
+.cm-s-obsidian span.cm-footref.cm-hmd-barelink.cm-formatting,
+.cm-s-obsidian span.cm-formatting-image,
+.cm-s-obsidian span.cm-formatting-link-string,
+.cm-s-obsidian span.cm-formatting-link {
+  background-color: var(--link-to-Background-colo-for-main-window);
+}
+/*Убираю цвет у уебещной иконки в интернет*/
+.cm-formatting-link-string,
+.cm-formatting-link-string:hover {
+  background-color: var(--link-to-Background-colo-for-main-window);
+}
+
+/*Текст с одной, двумя, тремя * */
+/* .cm-em {
+  color: cyan;
+}
+
+.cm-strong {
+  color: cadetblue;
+}
+
+.cm-strong.cm-em {
+  color: red;
+} */
+
+/* HighLihgt */
+.cm-s-obsidian span.cm-highlight {
+  background-color: orange;
+  color: black;
+  padding: 3px;
+}
+/* Зачеркивание */
+.cm-strikethrough {
+  text-decoration-color: red;
+}
+
+/* Quote */
+/* .code-styler.code-styler-style-inline
+  .cm-s-obsidian
+  span.cm-formatting-code
+  + span.cm-inline-code:not(.cm-formatting-code) {
+  background-color: red;
+  border: 1px solid gray;
+} */
+/* comic sanc  */
+
+.callout-content {
+  color: black;
+}
+.markdown-rendered {
+  color: black;
+  opacity: 100%;
+  background-color: #fff;
+}
+.markdown-rendered code {
+  border: 1px solid gray;
+}
+
+.callout-title-inner {
+  color: black;
+}
+.callout {
+  background-color: rgba(99, 121, 133, 0.612);
+}
+
+/* list */
+.cm-s-obsidian .cm-formatting-list {
+  color: rgb(0, 0, 0);
+}
+
+.list-bullet:after {
+  background-color: black;
+}
+.cm-formatting-list-ul {
+  /* точки в листе */
+}
+
+/* H */
+.inline-title.theme-light {
+  color: rgb(0, 0, 0);
+}
+
+.HyperMD-header-1 {
+  color: var(--link-h-color);
+  opacity: 95%;
+}
+.HyperMD-header-2 {
+  color: var(--link-h-color);
+  opacity: 80%;
+}
+.HyperMD-header-3 {
+  color: var(--link-h-color);
+  opacity: 70%;
+}
+.HyperMD-header-4 {
+  color: var(--link-h-color);
+  opacity: 60%;
+}
+
+.HyperMD-header-5 {
+  color: var(--link-h-color);
+  opacity: 50%;
+}
+.HyperMD-header-6 {
+  color: var(--link-h-color);
+  opacity: 45%;
+}
+
+/* Таблица */
+
+tbody {
+  color: black;
+}
+
+.markdown-source-view.mod-cm6 .cm-table-widget th,
+.markdown-source-view.mod-cm6 .cm-table-widget td {
+  border: 2px solid rgb(16, 16, 16, 0.4);
+}
+
+/*nav*/
+
+/*активная владка в боковой панели с файлами*/
+.nav-file-title.is-active {
+  font-weight: 700;
+  background-color: white;
+  color: black;
+}
+
+/*активная владка в боковой панели с файлами hover*/
+body:not(.is-grabbing) .nav-file-title.is-active:hover,
+body:not(.is-grabbing) .nav-folder-title.is-active:hover {
+  background-color: black;
+  color: white;
+  font-weight: 700;
+}
+
+/*настройки цвет фона панели*/
+.vertical-tab-header {
+  background-color: var(--link-to-main-color-for-panel);
+}
+
+/*настройки цвет фона панели выбранной*/
+body:not(.is-phone) .horizontal-tab-nav-item.is-active,
+body:not(.is-phone) .vertical-tab-nav-item.is-active {
+  background-color: var(--link-to-Background-colo-for-main-window);
+}
+
+/*правая кнопка по папкам*/
+.nav-file-title.is-selected {
+  background-color: white;
+}
+
+
+/* Main resources */
+body.theme-light {
+  /*подсветка при наведении на ссылку*/
+  --color-hover-link: black;
+  
+  --default-font: Arial Rounded MT, serif;
+  --font-text-theme: Comic Sans MS;
+
+  --link-color: black;
+  --link-color-hover: black;
+  --link-decotation: underline;
+  --link-decoration-hover: none;
+
+  /*Ссылка у которой нет файла*/
+  --link-unresolved-color: rgb(0, 0, 0);
+  --link-unresolved-opacity: 100%;
+  --link-unresolved-decoration-style: underline;
+
+  --link-external-color: black;
+  --link-external-color-hover: black;
+  --link-external-decoration: unset;
+  --link-external-decoration-hover: underline;
+
+  /*MAIN цвет*/
+  --link-to-Background-colo-for-main-window: rgb(248, 224, 200);
+  --link-to-Background-colo-for-side-panal: rgb(68, 184, 5);
+  --link-to-main-color-for-panel: rgb(172, 172, 172);
+  --background-primary: var(--link-to-Background-colo-for-main-window);
+  --background-primary-alt: var(--link-to-Background-colo-for-side-panal);
+  --background-secondary: var(--link-to-Background-colo-for-main-window);
+  --background-secondary-alt: var(
+    --link-to-main-color-for-panel
+  ); /*цвет при фокусе для приложения*/
+
+  /*Убираю боковые линии */
+  --divider-color: none;
+  --divider-width: 0px;
+
+  --background-modifier-hover: var(--link-to-Background-colo-for-main-window);
+  --background-modifier-active-hover: yellow;
+  --background-modifier-border: rgb(
+    119,
+    119,
+    119
+  ); /*цвет линый у  --- и в когда нажимаю правую кнопку мыши*/
+  --background-modifier-border-hover: #000000; /*цвет Границ у страниц и кнопки on/off*/
+  /*--background-modifier-border-focus: red; */ /*цвет когда зажимаю левую кнопу мыши*/
+  --background-modifier-error: white;
+
+  /*навигация цвет*/
+  /* --nav-item-color-hover: red; */
+  --nav-item-background-hover: var(
+    --link-to-main-color-for-panel
+  ); /*цвет при наведении на сайд панель*/
+  --nav-item-background-selected: white; /*когда выбрал несколько и навелся на них*/
+  /* --nav-item-background-active: white; */
+
+  --ribbon-background: var(--link-to-main-color-for-panel);
+  /* body.is-focused .titlebar, body.is-focused  */
+
+  --indentation-guide-color: rgb(156, 150, 150); /*цвет у линий в тексте */
+
+  --callout-border-width: 2px;
+
+  /* --callout-border-opacity:100%; */
+  /*нижняя панель*/
+  /* --vault-profile-color-hover:red; */
+  /* --vault-profile-color:red; */
+
+  /*кнопки в меню*/
+  /* --interactive-hover:red; */
+  /* --interactive-normal:red; */
+
+  /* --interactive-accent-hover:red; */
+  /* --interactive-accent:red; */
+
+  /*Убрал скролл бар*/
+  --scrollbar-thumb-bg: none;
+  --scrollbar-active-thumb-bg: none;
+
+  --code-background: rgba(255, 255, 255, 0.718); /*Цвет у фона code*/
+
+  --text-normal: rgb(5, 5, 5); /* Цвет текста */
+  --text-muted: rgb(0, 0, 0); /* Цвет текста везде, кроме поля записи */
+  --text-faint: rgb(0, 0, 0); /* Цвет текста у дополнительных вкладок и */
+  --text-success: green;
+  /* --text-accent: rgb(255, 166, 0); цвета когда зажимаю перенос файлов */
+  --text-selection: var(
+    --link-to-main-color-for-panel
+  ); /*Цвет выделенного текста*/
+
+  --search-result-background: white;
+
+  --icon-color-hover: black; /*цвет при наведени на иконки */
+}
+
+/* code  */
+.cm-string {
+  color: rgb(189, 134, 71);
+}
+.cm-variable {
+  color: #7ccffb;
+  /* color: rgb(0, 136, 247); */
+  /* background-color: rgb(31, 31, 31); */
+}
+.cm-keyword {
+  color: #008cff;
+  padding: 5px;
+}
+.cm-type {
+  color: #008cff;
+}
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock {
+  color: rgb(0, 0, 0);
+}
+.cm-number {
+  color: black;
+}
+.cm-comment {
+  color: green;
+}
+
+/* При наведении на изменения размера */
+.workspace-leaf-resize-handle:hover {
+  background-color: black;
+}
+
+/* header панель */
+.workspace-tab-header-container {
+  background-color: var(--link-to-main-color-for-panel);
+}
+
+/* нижняя панель с настройками */
+/* body:not(.is-mobile)
+  .workspace-split.mod-left-split
+  .workspace-sidedock-vault-profile {
+  background-color: #f3bcbcb7;
+} */
+
+/* Цвет для кнопок свернуть, закрыть, крести, и скрыть сайд бар */
+/* .workspace-ribbon .sidebar-toggle-button{
+    background-color: var(--background-secondary-alt);
+} */
+
+/*тоже кнопки свернуть, выйти, закрыть панель с папками */
+.titlebar-button {
+  background-color: var(--background-secondary-alt);
+}
+/* панель закрыть и открыть папки */
+.workspace-ribbon.mod-left::before {
+  background-color: var(--background-secondary-alt);
+}
+
+/*ctr+p, ctr+o поиск */
+.prompt {
+  background-color: white;
+}
+
+/* Убрал ебаную линию снизу в поиске */
+.prompt-instructions {
+  border-top: 1px dashed black;
+  /* border-top: none; */
+  background-color: var(--link-to-Background-colo-for-main-window);
+}
